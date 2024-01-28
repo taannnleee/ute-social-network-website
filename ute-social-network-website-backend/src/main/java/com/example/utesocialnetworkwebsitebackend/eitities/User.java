@@ -1,5 +1,6 @@
 package com.example.utesocialnetworkwebsitebackend.eitities;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -36,18 +37,6 @@ public class User implements Serializable {
 
     @Column(name="password_hash")
     private String passHash;
-
-    @Enumerated(EnumType.STRING)
-    private ERole role;
-
-    @OneToMany(mappedBy = "customer",fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    List<Transaction> transactions;
-
-    @OneToMany(mappedBy = "customer",fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    List<Orders> orders;
-
-    @OneToMany(mappedBy = "customer",fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    List<Ticket> tickets;
 
 
 
