@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "Customers")
+@Table(name = "User")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
