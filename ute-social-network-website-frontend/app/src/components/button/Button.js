@@ -1,8 +1,9 @@
 import React from 'react';
+import "./Button.scss";
 
 const Button = (props) => {
     return (
-        <button>
+        <button className={`button ${props.className} ||""`}>
             {props.children}
         </button>
     );

@@ -4,7 +4,11 @@ import Button from './components/button/Button';
 
 function App() {
   return (
-    <Button> Pro</Button>
+   <div>
+      <Button > Pro</Button>
+      <Button className="button--secondary">Pro2</Button>
+   </div>
+    
   );
 }
 
