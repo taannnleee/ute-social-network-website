@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from './components/button/Button';
+import FormLogin from './components/button/FormLogin';
+import login from './pages/login';
 
 function App() {
   return (
-   <div>
-      <Button > Pro</Button>
-      <Button className="button--secondary">Pro2</Button>
-   </div>
+    
+    <div>
+    <login /> {/* Render component hoặc mã từ file login.js */}
+  </div>
+    
     
   );
 }
