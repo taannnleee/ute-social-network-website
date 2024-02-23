@@ -8,6 +8,7 @@ const StyledFormLogin = styled.button`
     /* Thêm các thuộc tính CSS tùy chỉnh cho nút ở đây */
 `;
 
+// Hàm bên dưới là sử dụng bootstrap á mấy ní. mấy ní muososn dùng thì nhớ phải có cái inport ở dòng 3
 const FormLogin = (props) => {
     return (
         <div className="container">

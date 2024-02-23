@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios'
 
 export const Test = (props) => {
     const data = [
@@ -11,6 +12,12 @@ export const Test = (props) => {
             "name" : "trieu"
         }
     ]
+    useEffect (()=>{
+        axios.get("https://reqres.in/api/users?page=2").then(data=>
+        {
+            console.log("checkkkkkk", data)
+        })     
+    },[])
   return (
     <div>
         <h2> List Employee</h2>
